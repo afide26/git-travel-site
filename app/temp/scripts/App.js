@@ -67,36 +67,12 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
-var Person = __webpack_require__(1);
-var alan = new Person('Alan', 'blue');
-alan.greet();
-
-var jane = new Person('Jane', 'pink');
-jane.greet();
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-function Person(name, color) {
-  this.name = name;
-  this.color = color;
-  this.greet = function() {
-    console.log(
-      'Hello ' + this.name + ' and my favorite color is ' + this.color + '.'
-    );
-  };
-}
-
-=======
 "use strict";
 
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _Person2 = __webpack_require__(1);
+var _Person2 = __webpack_require__(2);
 
 var _Person3 = _interopRequireDefault(_Person2);
 
@@ -108,7 +84,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var $ = __webpack_require__(2);
+var $ = __webpack_require__(1);
 
 var Adult = function (_Person) {
   _inherits(Adult, _Person);
@@ -139,41 +115,6 @@ jane.payTaxes();
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Person = function () {
-  function Person(fullName, favColor) {
-    _classCallCheck(this, Person);
-
-    this.name = fullName;
-    this.color = favColor;
-  }
-
-  _createClass(Person, [{
-    key: "greet",
-    value: function greet() {
-      console.log("Hi there " + this.name + ". Let me guess, you're favorite color is " + this.color + ".");
-    }
-  }]);
-
-  return Person;
-}();
-
-exports.default = Person;
-
-/***/ }),
-/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10431,7 +10372,41 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
->>>>>>> header
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var Person = function () {
+  function Person(fullName, favColor) {
+    _classCallCheck(this, Person);
+
+    this.name = fullName;
+    this.color = favColor;
+  }
+
+  _createClass(Person, [{
+    key: "greet",
+    value: function greet() {
+      console.log("Hi there " + this.name + ". Let me guess, you're favorite color is " + this.color + ".");
+    }
+  }]);
+
+  return Person;
+}();
+
+exports.default = Person;
 
 /***/ })
 /******/ ]);
