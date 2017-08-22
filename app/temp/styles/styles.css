@@ -480,12 +480,20 @@ a {
 
 .large-hero--text-content {
     position: absolute;
+    padding-top: 5.5rem;
     top: 50%;
     left: 0;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     width: 100%;
     text-align: center;
+  }
+
+@media (min-width: 800px) {
+
+.large-hero--text-content {
+      padding-top: 3.75rem
+  }
   }
 
 .large-hero--title {
@@ -568,6 +576,32 @@ a {
     max-width: 976px;
   }
 
+.wrapper--no-padding-until-medium {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+@media (min-width: 800px) {
+
+.wrapper--no-padding-until-medium {
+      padding-left: 18px;
+      padding-right: 18px
+  }
+  }
+
+.wrapper--no-padding-until-large {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+@media (min-width: 1010px) {
+
+.wrapper--no-padding-until-large {
+      padding-left: 18px;
+      padding-right: 18px
+  }
+  }
+
 .wrapper .wrapper {
     padding-left: 0;
     padding-right: 0;
@@ -593,6 +627,42 @@ a {
 .page-section {
     padding: 4.5rem 0
 }
+  }
+
+.page-section--no-b-padding-until-medium {
+    padding-bottom: 0;
+  }
+
+@media (min-width: 800px) {
+
+.page-section--no-b-padding-until-medium {
+      padding-bottom: 4.5rem
+  }
+  }
+
+.page-section--no-b-padding-until-large {
+    padding-bottom: 0;
+  }
+
+@media (min-width: 1010px) {
+
+.page-section--no-b-padding-until-large {
+      padding-bottom: 4.5rem
+  }
+  }
+
+.page-section--testimonials {
+    background: #e0e6ef;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+@media (min-width: 800px) {
+
+.page-section--testimonials {
+      background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+      background-size: cover
+  }
   }
 
 .page-section--blue {
@@ -654,6 +724,87 @@ a {
     margin-top: 0;
   }
 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.row__until-medium {
+    margin-bottom: 1rem;
+  }
+
+.row--t-padding {
+    padding-top: 5rem;
+  }
+
+@media (min-width: 800px) {
+    .row--gutters {
+      margin-right: -65px;
+    }
+    .row--gutters > div {
+      padding-right: 65px;
+    }
+    .row--gutters-small {
+      margin-right: -45px;
+    }
+
+    .row--gutters-small > div {
+      padding-right: 45px;
+    }
+
+    .row--gutters-large {
+      padding-right: -100px;
+    }
+
+    .row--gutters-large > div {
+      padding-right: 100px;
+    }
+
+    .row__until-medium {
+      margin-bottom: 0;
+    }
+    .row__medium-4 {
+      float: left;
+      width: 33.33%;
+    }
+
+    .row__medium--4--larger {
+      width: 37%;
+    }
+
+    .row__medium-6 {
+      width: 50%;
+      float: left;
+    }
+
+    .row__medium-8 {
+      float: left;
+      width: 66.66%;
+    }
+    .row__medium-8--smaller {
+      width: 63%;
+    }
+  }
+
+/*Begin equal height rule*/
+
+@media (min-width: 800px) {
+
+.row--equal-height-at-medium {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex
+  }
+  }
+
+.row--equal-height-at-medium > div {
+      float: none;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
 .generic-content-container p {
     line-height: 1.65;
     margin: 0 0 1.8rem 0;
@@ -681,6 +832,10 @@ a {
     font-weight: 500;
   }
 
+.section-title--blue {
+    color: #2f5572;
+  }
+
 .section-title__icon {
     display: block;
     margin-left: auto;
@@ -691,6 +846,8 @@ a {
 @media (min-width: 530px) {
 
 .section-title__icon {
+      position: relative;
+      top: .5rem;
       margin-right: 0.5rem;
       margin-left: 0;
       margin-bottom: 0;
@@ -744,4 +901,160 @@ a {
 .feature-item {
     padding-left: 5.875rem
 }
+  }
+
+.testimonial {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 18px 1px 18px;
+  margin-bottom: 6.125rem;
+}
+
+@media (min-width: 800px) {
+
+.testimonial {
+    padding: 0 1.8125rem 1px 1.8125rem;
+    margin-bottom: 0
+}
+  }
+
+.testimonial--last {
+    margin-bottom: 0;
+  }
+
+.testimonial__photo {
+    border-radius: 5rem;
+    overflow: hidden;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto -5rem auto;
+    position: relative;
+    top: -5rem;
+    border: 6px solid rgba(255, 255, 255, 0.8);
+  }
+
+.testimonial__title {
+    color: #2f5572;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+  }
+
+.testimonial__subtitle {
+    color: #d59541;
+    text-align: center;
+    font-weight: 400;
+    font-size: .9375rem;
+    margin: .25rem 0 1rem 0;
+  }
+
+.site-footer {
+  background: #2f5572;
+  color: white;
+  padding: .5rem 0;
+  text-align: center;
+}
+
+.site-footer__text {
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: 200;
+  }
+
+@media (min-width: 800px) {
+
+.site-footer__text {
+      display: inline;
+      margin-bottom: 0;
+      margin-right: 1.4rem
+  }
+  }
+
+.site-header {
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+
+.site-header {
+    background-color: rgba(47,85,114, 0.3)
+}
+  }
+
+.site-header__menu-content {
+    display: none;
+  }
+
+@media (min-width: 800px) {
+
+.site-header__menu-content {
+      display: block
+  }
+  }
+
+.site-header__menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+
+.site-header__btn-container {
+    float: right;
+  }
+
+.site-header__logo {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(.8);
+            transform: translateX(-50%) scale(.8);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    position: absolute;
+    background-color: #2f5572;
+    padding: 1.5625rem 2.25rem;
+  }
+
+@media (min-width: 800px) {
+
+.site-header__logo {
+      left: auto;
+      -webkit-transform: translateX(50%);
+              transform: translateX(50%)
+  }
+  }
+
+.primary-nav--pull-right {
+    float: right;
+  }
+
+.primary-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.primary-nav ul::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.primary-nav li {
+    list-style: none;
+    float: left;
+    padding-right: 20px;
+  }
+
+.primary-nav a {
+    color: #fff;
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 300;
   }
