@@ -1005,6 +1005,13 @@ a {
     border-radius: 3px;
   }
 
+@media (min-width: 800px) {
+
+.site-header__menu-icon {
+      display: none
+  }
+  }
+
 .site-header__btn-container {
     float: right;
   }
