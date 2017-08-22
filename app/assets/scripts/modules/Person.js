@@ -7,3 +7,5 @@ function Person(name, color) {
     );
   };
 }
+
+module.exports = Person;
