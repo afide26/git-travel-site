@@ -9,7 +9,7 @@ class Adult extends Person {
 }
 
 var alan = new Person('Alan', 'blue');
-alert('Testing 1234 - for webpack');
+// alert('Testing 1234 - for webpack');
 alan.greet();
 
 var jane = new Adult('Jane Smith', 'orange');
