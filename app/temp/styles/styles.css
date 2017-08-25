@@ -985,6 +985,7 @@ a {
   }
 
 .site-header__menu-content {
+
     display: none;
   }
 
@@ -993,6 +994,10 @@ a {
 .site-header__menu-content {
       display: block
   }
+  }
+
+.site-header__menu_content--is-visible{
+    display:block;
   }
 
 .site-header__menu-icon {
@@ -1032,8 +1037,8 @@ a {
 
 .site-header__logo {
       left: auto;
-      -webkit-transform: translateX(50%);
-              transform: translateX(50%)
+      -webkit-transform: translateX(0);
+              transform: translateX(0)
   }
   }
 

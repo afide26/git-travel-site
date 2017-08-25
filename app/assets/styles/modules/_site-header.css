@@ -9,11 +9,17 @@
   }
 
   &__menu-content {
+
     display: none;
 
     @mixin atMedium {
       display: block;
     }
+  }
+
+
+  &__menu_content--is-visible{
+    display:block;
   }
 
   &__menu-icon {
@@ -43,7 +49,7 @@
     padding: 1.5625rem 2.25rem;
     @mixin atMedium {
       left: auto;
-      transform: translateX(50%);
+      transform: translateX(0);
     }
   }
 }
