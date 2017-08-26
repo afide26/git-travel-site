@@ -1291,3 +1291,13 @@ Instead edit gulp/template/sprite.css*/
 
     background-position:36.69752421959096% 45.792307692307695%;
   }
+
+.reveal-item{
+  opacity:0;
+  -webkit-transition: opacity 1.5s ease-out;
+  transition: opacity 1.5s ease-out;
+}
+
+.reveal-item--is-visible{
+    opacity:1;
+  }
