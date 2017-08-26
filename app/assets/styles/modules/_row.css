@@ -28,7 +28,8 @@
     }
 
     &--gutters-large > div {
-      padding-right: 100px;
+      padding-right: 50px;
+      padding-left:50px;
     }
 
     &__until-medium {
