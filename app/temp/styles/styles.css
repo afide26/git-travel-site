@@ -496,7 +496,7 @@ a {
   }
   }
 
-.large-hero--title {
+.large-hero__title {
     font-weight: 300;
     color: #2f5572;
     margin: 0;
@@ -505,12 +505,12 @@ a {
 
 @media (min-width: 530px) {
 
-.large-hero--title {
+.large-hero__title {
       font-size: 4.8rem
   }
   }
 
-.large-hero--subtitle {
+.large-hero__subtitle {
     font-weight: 300;
     color: #2f5572;
     font-size: 1.5rem;
@@ -519,12 +519,12 @@ a {
 
 @media (min-width: 530px) {
 
-.large-hero--subtitle {
+.large-hero__subtitle {
       font-size: 2.9rem
   }
   }
 
-.large-hero--description {
+.large-hero__description {
     color: #fcfcfc;
     font-weight: 100;
     font-size: 1.1rem;
@@ -535,7 +535,7 @@ a {
 
 @media (min-width: 530px) {
 
-.large-hero--description {
+.large-hero__description {
       font-size: 1.8rem
   }
   }
@@ -987,8 +987,13 @@ a {
 @media (min-width: 800px) {
 
 .site-header {
+    position: fixed;
     background-color: rgba(47,85,114, 0.3)
 }
+
+    .site-header--dark{
+      background-color: rgba(23, 51, 72, .85);
+    }
   }
 
 .site-header__menu-content {
@@ -1114,6 +1119,10 @@ a {
             transform: translateX(-50%) scale(.8);
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
+    -webkit-transition: -webkit-transform .5s ease-out;
+    transition: -webkit-transform .5s ease-out;
+    transition: transform .5s ease-out;
+    transition: transform .5s ease-out, -webkit-transform .5s ease-out;
     position: absolute;
     background-color: #2f5572;
     padding: 1.5625rem 2.25rem;
@@ -1126,6 +1135,13 @@ a {
       -webkit-transform: translateX(0);
               transform: translateX(0)
   }
+
+      .site-header--dark .site-header__logo {
+        -webkit-transform: scale(0.54);
+                transform: scale(0.54);
+        -webkit-transition: all 1s ease-out;
+        transition: all 1s ease-out;
+      }
   }
 
 .primary-nav {
