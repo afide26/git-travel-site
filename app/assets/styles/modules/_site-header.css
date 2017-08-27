@@ -127,7 +127,7 @@
       transform: translateX(0);
 
       .site-header--dark & {
-        transform: scale(0.54);
+        transform: scale(0.547);
         transition: all 1s ease-out;
       }
     }
