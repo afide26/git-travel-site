@@ -843,6 +843,7 @@ a {
 
 .section-title--less-margin{
     margin-bottom: 1.3rem;
+    margin-top:0;
   }
 
 .section-title__icon {
@@ -1345,12 +1346,37 @@ Instead edit gulp/template/sprite.css*/
   right:0;
 }
 
+.modal__inner{
+    position:absolute;
+    width:100%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%)
+  }
+
 .modal__description{
     font-size: 1.3rem;
     text-align: center;
     font-weight: 300;
     line-height: 1.65;
   }
+
+.modal__close{
+    position: absolute;
+    top:15px;
+    right:15px;
+    font-size: 2rem;
+    -webkit-transform: scaleX(1.2);
+            transform: scaleX(1.2);
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    color: #2f5572;
+    cursor: pointer;
+  }
+
+.modal__close:hover{
+      color: #d59541;
+    }
 
 .social-icons{
   text-align:center;
