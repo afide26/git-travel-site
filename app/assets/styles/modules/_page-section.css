@@ -24,9 +24,12 @@
     background: #e0e6ef;
     padding-left: 0;
     padding-right: 0;
-    @mixin atMedium {
-      background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
-      background-size: cover;
+
+    @mixin atLarge {
+      &.lazyloaded{
+        background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+        background-size: cover;
+      }
     }
   }
   &--blue {

@@ -6,4 +6,9 @@
     4. Javascript
     5. JQuery
     6. Webpack
+    7. Lazyloading
+    8. Waypoints
+    9. Mobile First Responsive Design
+    10. ES6 Classes
+    11. Flexbox
     and the best practices in modern Web Development Workflow
