@@ -122,6 +122,7 @@
     position: absolute;
     background-color: $mainBlue;
     padding: 1.5625rem 2.25rem;
+
     @mixin atMedium {
       left: auto;
       transform: translateX(0);
@@ -131,5 +132,9 @@
         transition: all 1s ease-out;
       }
     }
+  }
+
+  &__logo__graphic{
+    text-indent:-9999px;
   }
 }

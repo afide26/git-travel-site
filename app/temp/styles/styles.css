@@ -1152,6 +1152,10 @@ a {
       }
   }
 
+.site-header__logo__graphic{
+    text-indent:-9999px;
+  }
+
 .primary-nav {
   padding-top: 10px;
 }
